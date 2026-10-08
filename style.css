@@ -1,0 +1,241 @@
+/* Marketplace HELP guide. Matches the look of the privacy policy page. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #14221b;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 42rem;
+  padding: 32px 20px 64px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  border-top: 1px solid #d6ddd9;
+  font-size: 1.15rem;
+  margin-top: 2.25rem;
+  padding-top: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  margin-top: 1.25rem;
+}
+
+a {
+  color: #0b5cad;
+}
+
+a:focus-visible {
+  outline: 3px solid #0b5cad;
+  outline-offset: 2px;
+}
+
+ul,
+ol {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+code,
+.badge {
+  background: #eef2f0;
+  border: 1px solid #d6ddd9;
+  border-radius: 999px;
+  font-family: Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  padding: 0.05em 0.5em;
+  white-space: nowrap;
+}
+
+kbd {
+  background: #f6f8f7;
+  border: 1px solid #b9c4be;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 0.85em;
+  padding: 0.05em 0.4em;
+  white-space: nowrap;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+.updated {
+  color: #4a5a52;
+  margin-top: 0;
+}
+
+/* Table of contents */
+
+nav.toc {
+  background: #f6f8f7;
+  border: 1px solid #d6ddd9;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+}
+
+nav.toc h2 {
+  border-top: 0;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  padding-top: 0;
+}
+
+nav.toc ol {
+  margin: 0;
+}
+
+nav.toc li {
+  margin-bottom: 0.2rem;
+}
+
+.back {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Callout boxes */
+
+.callout {
+  border-left: 5px solid #14221b;
+  border-radius: 6px;
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
+}
+
+.callout > :first-child {
+  margin-top: 0;
+}
+
+.callout > :last-child {
+  margin-bottom: 0;
+}
+
+.callout-important {
+  background: #e7f1fb;
+  border-left-color: #0b5cad;
+}
+
+.callout-note {
+  background: #f6f8f7;
+  border-left-color: #4a5a52;
+}
+
+.callout-caution {
+  background: #fdf6e3;
+  border: 1px solid #c99a1e;
+  border-left: 5px solid #c99a1e;
+}
+
+.callout-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+/* Sample panel labels used in the caution section */
+
+.sample {
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.05em 0.5em;
+}
+
+.sample-check {
+  background: #fff3bd;
+  color: #6b4e00;
+}
+
+.sample-careful {
+  background: #ffe8e6;
+  color: #8a1c13;
+}
+
+/* Tables */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #d6ddd9;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f6f8f7;
+}
+
+/* Screenshots (added once redacted images are ready) */
+
+figure {
+  margin: 1.25rem 0;
+}
+
+figure img {
+  border: 1px solid #d6ddd9;
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+figcaption {
+  color: #4a5a52;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+footer {
+  border-top: 1px solid #d6ddd9;
+  color: #4a5a52;
+  font-size: 0.9rem;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 24px 16px 48px;
+  }
+
+  h1 {
+    font-size: 1.55rem;
+  }
+}
