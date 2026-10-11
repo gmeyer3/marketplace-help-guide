@@ -14,7 +14,7 @@
       </header>
 
       <h1 id="top">Marketplace HELP guide</h1>
-      <p class="updated">How to use the extension. Last updated October 9, 2026, for version 1.3.2.</p>
+      <p class="updated">How to use the extension. Last updated October 11, 2026, for version 1.4.1.</p>
 
       <nav class="toc" aria-labelledby="toc-heading">
         <h2 id="toc-heading">Contents</h2>
@@ -29,6 +29,7 @@
           <li><a href="#notes">Notes on a listing</a></li>
           <li><a href="#zoom">Zoom detail image</a></li>
           <li><a href="#badges">The badges on a card</a></li>
+          <li><a href="#price-changes">Price changes</a></li>
           <li><a href="#seller-caution">The seller caution panel</a></li>
           <li><a href="#loading-bar">The loading bar</a></li>
           <li><a href="#your-data">Where your information is kept</a></li>
@@ -195,14 +196,27 @@
       <section aria-labelledby="saved-searches">
         <h2 id="saved-searches">7. Saving a search</h2>
         <ol>
-          <li>Type what you’re looking for in the Marketplace search box.</li>
-          <li>Click the save icon (💾) at the right end of the search box. The phrase is saved.</li>
-          <li>Your saved phrases appear under <strong>Saved searches</strong>, just below the <strong>Hide undesired</strong> switch.</li>
-          <li>Click a saved phrase any time to run that search again without retyping it.</li>
+          <li>Type what you’re looking for in the Marketplace search box. If you like, also set a minimum or maximum price in Marketplace’s own price filter.</li>
+          <li>Click the save icon (💾) at the right end of the search box. The phrase is saved, along with the price range if you set one.</li>
+          <li>Your saved phrases appear under <strong>Saved searches</strong>, just below the <strong>Hide undesired</strong> switch. A saved price range is shown after the phrase, for example <strong>kayak · $100–$500</strong>, <strong>kayak · $100+</strong>, or <strong>kayak · up to $500</strong>.</li>
+          <li>Click a saved phrase any time to run that search again, with its price range, without retyping anything.</li>
         </ol>
         <p>
-          The save icon is dimmed when the search box is empty or when that
-          phrase is already saved.
+          If the search box is empty, the save icon uses the phrase from the
+          search you’re currently looking at. The icon is dimmed when that
+          phrase is already saved with the same price range; clicking it then
+          just scrolls the list to the saved phrase.
+        </p>
+        <p>
+          Each phrase is saved only once. If you search a saved phrase with a
+          different price range, the save icon offers <strong>Update price
+          range</strong>, and clicking it replaces the old range.
+        </p>
+        <p>
+          If you type a saved phrase into the search box yourself, Marketplace
+          HELP applies its saved price range for you. It does this once per
+          browsing session, so if you then clear or change the price filter,
+          your choice sticks.
         </p>
         <p>
           There isn’t a button to delete a single saved search yet. Saved
@@ -345,8 +359,27 @@
         </figure>
       </section>
 
+      <section aria-labelledby="price-changes">
+        <h2 id="price-changes">11. Price changes</h2>
+        <p>
+          Marketplace HELP remembers the last price it saw for each listing,
+          both on cards in the search results and on listings you open. If the
+          price is different the next time you see that listing, the price is
+          highlighted:
+        </p>
+        <ul>
+          <li><strong>Price went down</strong>: the price is shown in <strong class="price-down">dark green bold</strong>. Hover over it to see “Price dropped”.</li>
+          <li><strong>Price went up</strong>: the price is shown in <strong class="price-up">red bold</strong>, with the previous price crossed out beside it, such as <strong class="price-up">$450</strong> <s>$400</s>. Hovering shows “Was $400”.</li>
+        </ul>
+        <p>
+          The highlight stays until the price changes again. The first time you
+          see a listing there’s nothing to compare against, so its price looks
+          normal. “Free” counts as a price of $0.
+        </p>
+      </section>
+
       <section aria-labelledby="seller-caution">
-        <h2 id="seller-caution">11. The seller caution panel</h2>
+        <h2 id="seller-caution">12. The seller caution panel</h2>
         <p>
           When you open a listing, a colored panel may appear at the top of the
           My Notes bar, above your note. It points out seller details that are
@@ -385,7 +418,7 @@
       </section>
 
       <section aria-labelledby="loading-bar">
-        <h2 id="loading-bar">12. The loading bar</h2>
+        <h2 id="loading-bar">13. The loading bar</h2>
         <p>
           While a Marketplace page is loading, or while Marketplace adds more
           results as you scroll, a thin strip appears across the very top of the
@@ -400,7 +433,7 @@
       </section>
 
       <section aria-labelledby="your-data">
-        <h2 id="your-data">13. Where your information is kept</h2>
+        <h2 id="your-data">14. Where your information is kept</h2>
         <p>
           Marketplace HELP keeps everything in Chrome’s own storage for
           extensions, on this computer, in the Chrome profile you’re using:
@@ -408,9 +441,10 @@
         <ul>
           <li>Your marks (finalist, favorite, undesired)</li>
           <li>The order you picked your finalists</li>
+          <li>The last price seen for each listing</li>
           <li>The title and photo address of each finalist, so a sold or removed finalist can still be recognized</li>
           <li>Your notes</li>
-          <li>Your saved searches</li>
+          <li>Your saved searches and their price ranges</li>
           <li>Whether Hide undesired is on or off</li>
           <li>Photo counts, view counts, and listed times for listings you’ve opened</li>
         </ul>
@@ -422,7 +456,7 @@
           Removing a mark or clearing a note deletes it. Removing a finalist
           mark also deletes the title and photo address saved for it. Uninstalling the
           extension deletes everything it stored, including saved searches,
-          counts, and listed times.
+          counts, listed times, and remembered prices.
         </p>
         <p>
           For the full details, read the
@@ -431,7 +465,7 @@
       </section>
 
       <section aria-labelledby="troubleshooting">
-        <h2 id="troubleshooting">14. Troubleshooting</h2>
+        <h2 id="troubleshooting">15. Troubleshooting</h2>
         <h3>I don’t see any Marketplace HELP buttons</h3>
         <p>
           Reload the Marketplace page. The extension only works on Facebook
@@ -474,7 +508,7 @@
       </section>
 
       <section aria-labelledby="contact">
-        <h2 id="contact">15. Contact</h2>
+        <h2 id="contact">16. Contact</h2>
         <p>
           Questions or problems? Email
           <a href="mailto:gmeyer3@gmail.com">gmeyer3@gmail.com</a>.

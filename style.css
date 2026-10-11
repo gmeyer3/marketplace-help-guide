@@ -249,3 +249,11 @@ footer {
     font-size: 1.55rem;
   }
 }
+
+.price-down {
+  color: #006400;
+}
+
+.price-up {
+  color: #c62828;
+}
