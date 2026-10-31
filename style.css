@@ -257,3 +257,14 @@ footer {
 .price-up {
   color: #c62828;
 }
+
+.intro-video {
+  margin: 1.25rem 0 2rem;
+}
+.intro-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #14181f;
+}
