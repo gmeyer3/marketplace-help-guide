@@ -22,7 +22,8 @@ main {
 }
 
 .brand {
-  margin-bottom: 0.75rem;
+  float: left;
+  margin: 0 1rem 0.5rem 0;
 }
 
 .brand img {
@@ -259,6 +260,7 @@ footer {
 }
 
 .intro-video {
+  clear: both;
   max-width: 960px;
   margin: 1.25rem auto 2rem;
   text-align: center;
